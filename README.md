@@ -7,19 +7,20 @@ Any tables being watched must have an change column that is increasing in value.
 This change column can be an int, timestamp, datetime or intastimestamp(bigint).
 
 Example
-     input {
-       mysql {
-         host => "yourhost.atyourdomain"
-         db => "yourdb, yourdb2"
-         username => "user"
-         password => "pass"
-         changecol => "id"
-         changecoltype => "int"
-       }
-     }
-     output {
-        stdout {
-        debug => true
-       }
-     }
+     <br>input {
+       <br>mysql {
+         <br>host => "yourhost.atyourdomain"
+         <br>db => "yourdb, yourdb2"
+         <br>username => "user"
+         <br>password => "pass"
+         <br>changecol => "id"
+         <br>changecoltype => "int"
+       <br>}
+     <br>}
+     <br>output {
+        <br>stdout {
+        <br>debug => true
+       <br>}
+     <br>}
+
 
