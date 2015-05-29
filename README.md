@@ -7,8 +7,25 @@ Any tables being watched must have an change column that is increasing in value.
 This change column can be an int, timestamp, datetime or intastimestamp(bigint).
 
 ####Example
-    
-     
+
+logstash config:
+```
+     input {
+       mysql {
+         host => "yourhost.atyourdomain"
+         db => "yourdb, yourdb2"
+         username => "user"
+         password => "pass"
+         changecol => "id"
+         changecoltype => "int"
+       }
+     }
+     output {
+       stdout {
+         debug => true
+       }
+     }
+```
      ####options: 
      1.#####host - string The host of the MySql Server.
      1.#####port - number The port of the MySql Server.
