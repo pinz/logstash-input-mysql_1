@@ -27,12 +27,12 @@ logstash config:
      }
 ```
 ####options: 
-#####1.host - string The host of the MySql Server.
-#####1.port - number The port of the MySql Server.
-#####1.db - array (required) The database or databases to read from.
-#####1.host - string  The host of the MySql DB.
-#####1.port - number The port of the MySql Server. Default 3306.
-#####1.connproperties - hash A hash containing any MYSQL jdbc properties you wish to pass into the connection.
+1.host - string The host of the MySql Server.
+1.port - number The port of the MySql Server.
+1.db - array (required) The database or databases to read from.
+1.host - string  The host of the MySql DB.
+1.port - number The port of the MySql Server. Default 3306.
+1.connproperties - hash A hash containing any MYSQL jdbc properties you wish to pass into the connection.
 1.#####username - string The username for the mysql database.
 1.#####password - string The password for the mysql database.
 1.#####tables - array The tables to read from.
